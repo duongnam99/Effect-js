@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0;} 
+.chieuso1 {
+	animation: chieu1 2s forwards!important;
+}
+@-webkit-keyframes chieu1{
+	0% {transform: translateX(0px) translateY(0px);}
+	25% {transform: translateX(200px) translateY(0px);}
+	50% {transform: translateX(200px) translateY(200px);}
+	80% {transform: translateX(500px) translateY(200px);}
+	100% {transform: translateX(500px) translateY(500px);}
+}
+#kcd {
+	animation: chieu2 2s forwards;
+}
+@-webkit-keyframes chieu2 {
+	100% {transform: translateX(0px) translateY(0px);}
+	80% {transform: translateX(200px) translateY(0px);}
+	50% {transform: translateX(200px) translateY(200px);}
+	25% {transform: translateX(500px) translateY(200px);}
+	0% {transform: translateX(500px) translateY(500px);}
+}
+.kochuyendong{
+	animation: none!important;
+}

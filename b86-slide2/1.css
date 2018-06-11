@@ -1,0 +1,117 @@
+*{margin: 0; padding: 0;}
+
+html, body, #slidewrapper, .slides, .slides ul,.slides ul li,.slides ul li ._1slide {
+    width:  100%;
+    height: 100%;
+} 
+#slidewrapper {
+	position: relative;
+	overflow-x: hidden; 
+	overflow-y: hidden; 
+	background: black;
+}
+.slides {
+    position: relative;
+}
+.slides ul li {
+	background-size: cover;
+	position: absolute; /*.slide có thuộc tính relative  nên khi các li có thuộc tính absolute(vị trí tương đối) thì nó sẽ dc tính vị trí theo .slide, với top, lèt = 0, => các thẻ li nằm đè lên nhau, nếu bỏ absolute => ta sẽ thấy các ảnh nằm nối tiếp nhau*/
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.slides ul li.dangxem {
+	opacity: 1;
+}
+.nuts {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9;
+}
+.nuts b {
+    font-size:  100px;
+    padding:  10px 20px;
+    cursor:  pointer;
+    color: #1d1b1b91;
+    transition:  0.2s;
+}
+.nuts b:hover {color: lightblue;}
+
+.bienMatkhianNext {
+	animation: nextMat 1s ease-in-out forwards;
+}
+@-webkit-keyframes nextMat {
+	/*from {
+		transform: scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}*/
+	/*from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(100%);
+		opacity: 0;
+	}*/
+	from {
+		transform: scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+}
+.diVaokhianNext {
+	animation: nextHien 1s ease-in-out forwards;
+}
+@-webkit-keyframes nextHien {
+	/*from {
+		transform: scale(2);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}*/
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.bienMatkhianPrev {
+	animation: PrevMat 1s forwards;
+}
+@-webkit-keyframes PrevMat {
+	from {
+		transform: scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+.diVaokhianPrev{
+	animation: PrevHien 1s ease;
+}
+@-webkit-keyframes PrevHien {
+	from {
+		transform: scale(2);
+		opacity: 0;
+	}
+	to {
+		
+		transform: scale(1);
+		opacity: 1;
+	}
+}

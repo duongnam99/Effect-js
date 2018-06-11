@@ -1,0 +1,27 @@
+*{margin: 0; padding: 0;}
+
+.phai a {
+    padding-left: 20px;
+    color: #0033ff;
+    transition: 0.4s;
+}
+.col-sm-8.phai {
+    font-size: 18px;
+}
+
+.col-sm-4.trai {
+    font-weight: bold;
+}
+
+.menu {
+    background: #bfb9b9c4;
+    padding: 28px;
+    font-size: 35px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+} 
+.nholai {
+	font-size: 20px;
+	padding: 8px;
+}

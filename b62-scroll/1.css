@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0;}
+
+.container {
+    margin-left:  130px;
+}
+
+.menu a {
+    color: white;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.menu {
+    line-height: 25px;
+    background:  #a70e1a;
+    /* color: white; */
+    padding:  10px;
+    transition: 0.4s;
+}
+/*menu chuyển màu*/
+.menuden {
+    position:  fixed;
+    width:  100%;
+    z-index: 2;
+    /* padding: 0px; */
+    background: #333030;
+    top: 0;
+    transition: 0.4s;
+} 
+.banner {
+    background-image: url(1.png);
+    height:95px;
+    width:100%;
+}
+/*đông cứng nội dung ở sidebar*/
+.tindunglai {
+    position: fixed;
+    top: 44px; 
+}
+.s3 {
+    opacity: 0;
+}
+ /*add class vào phần nội dung bên trái để nó hiện ra khi cuộn chuột gần tới nơi*/
+.dilen {
+    animation: cdlen 1s ease forwards;
+
+}
+@-webkit-keyframes cdlen {
+    from { transform: translateY(300px);opacity: 0 } /*tu phai sang: translateX*/
+    to {transform: translateY(0px); opacity: 1}
+}

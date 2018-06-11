@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0;}
+
+._1khoi {
+    float: left;
+    margin-top: 10px;
+    position: relative;
+}
+
+.declick i.fa {
+    font-size: 20px;
+    cursor:  pointer;
+}
+
+.declick {
+    padding: 0px 15px;
+    transition:  0.4s;
+    /* position:  initial; */
+}
+
+.dehienthi {
+    position:  absolute;
+    width:  200px;
+    transition:  0.4s;
+    right: 12px;
+    padding-top: 9px;
+    opacity:  0; 
+    visibility:  hidden; 
+}
+
+.dehienthi:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -9px;
+    border: 11px #ab6f6f00 solid;
+    border-bottom-color: white;
+    right: 0px;
+}
+
+.thanhxanh {
+    height: 43px;
+    background: #4267b2;
+    padding-left: 800px;
+} 
+.mautrang {
+	color:white;
+}
+.hienthi{
+	opacity: 1;
+	visibility: visible;
+}
